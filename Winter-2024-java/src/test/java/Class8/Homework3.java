@@ -70,18 +70,19 @@ public class Homework3 {
          *
          */
 
-        String[] sen4word = new String[4];
-        //store 5-string values using index-values, store 5-any 4-words sentence in it.
+        String[] sen4word = {"Have a happy life","have a great day","wOrk HaRD paRTy HArdEr","stay humble keep smiling"};
         System.out.println("sen4word -> " + Arrays.toString(sen4word));
-        //a) Print the entire array
+        /* other way */
+        String[] sen4word1 = new String[4];
         System.out.println("\nFill or Replace values in array using index-numbers");
-        sen4word[0] = "Have a happy life";
-        sen4word[1] = "have a great day";
-        sen4word[2] = "wOrk HaRD paRTy HArdEr";
-        sen4word[3] = "stay humble keep smiling";
-        System.out.println("sen4word -> " + Arrays.toString(sen4word));
+        sen4word1[0] = "Have a happy life";
+        sen4word1[1] = "have a great day";
+        sen4word1[2] = "wOrk HaRD paRTy HArdEr";
+        sen4word1[3] = "stay humble keep smiling";
+        System.out.println("sen4word1 -> " + Arrays.toString(sen4word1));
 
         System.out.println("\nmethod - split()");
+        //String[] splitBy_space = String[4].split(" ");
         String[] splitBy_space = sen4word[0].split(" ");
         int splitBy_space_length = splitBy_space.length;
         System.out.println("split by ' ' -> " + Arrays.toString(splitBy_space));
