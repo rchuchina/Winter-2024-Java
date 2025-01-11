@@ -27,14 +27,14 @@ public class Homework4 {
         //double studentScore = 90;
         double studentScore = 35.55;
         int maxScore = 180;
+        char grade;
         if (studentScore < 0 || studentScore > maxScore)   {
             System.out.println("Invalid student score entered");
         } else {
             // Calculate the percentage
             double percentage = (studentScore / maxScore) * 100;
             // Determine the grade
-            char grade;
-            if (percentage >= 91) {
+                   if (percentage >= 91) {
                 grade = 'A';
             } else if (percentage >= 81) {
                 grade = 'B';
@@ -47,8 +47,6 @@ public class Homework4 {
             } else {
                 grade = 'F';
             }
-            // Print the results
-            //System.out.printf("Student Percentage: %.2f%%\n", percentage);
             System.out.printf("Student Percentage :  = " +percentage + "  " );
             System.out.println("Student Grade: " + grade);
           }
