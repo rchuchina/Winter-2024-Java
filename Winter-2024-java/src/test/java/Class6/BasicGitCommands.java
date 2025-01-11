@@ -1,6 +1,6 @@
 package Class6;
 
-public class BasicGitCommands {
+public class git addBasicGitCommands {
     public static void main(String[] args) {
         /**
          * Basic git commands:
