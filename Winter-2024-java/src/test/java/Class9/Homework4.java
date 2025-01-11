@@ -23,6 +23,37 @@ public class Homework4 {
          *
          * (studentScore/maxScore)*100
          */
+        //double studentScore = 210;
+        //double studentScore = 90;
+        double studentScore = 35.55;
+        int maxScore = 180;
+        if (studentScore < 0 || studentScore > maxScore)   {
+            System.out.println("Invalid student score entered");
+        } else {
+            // Calculate the percentage
+            double percentage = (studentScore / maxScore) * 100;
+            // Determine the grade
+            char grade;
+            if (percentage >= 91) {
+                grade = 'A';
+            } else if (percentage >= 81) {
+                grade = 'B';
+            } else if (percentage >= 71) {
+                grade = 'C';
+            } else if (percentage >= 61) {
+                grade = 'D';
+            } else if (percentage >= 51) {
+                grade = 'E';
+            } else {
+                grade = 'F';
+            }
+            // Print the results
+            //System.out.printf("Student Percentage: %.2f%%\n", percentage);
+            System.out.printf("Student Percentage :  = " +percentage + "  " );
+            System.out.println("Student Grade: " + grade);
+          }
+
+
 
         /**
          * Question-2:
@@ -34,6 +65,21 @@ public class Homework4 {
          *
          * int myNumber = 15;
          */
-
+        int myNumber = 15;
+        //int myNumber = 10;
+        //int myNumber = 12;
+        //int myNumber = 13;
+        if (myNumber % 5 == 0 && myNumber % 3 == 0) {
+            System.out.println("myNumber  =  " +myNumber );
+            System.out.println("divisible by 5 and 3");
+        } else if (myNumber % 5 == 0) {
+            System.out.println("myNumber  =  " +myNumber );
+            System.out.println("divisible by 5");
+        } else if (myNumber % 3 == 0) {
+            System.out.println("myNumber  =  " +myNumber );
+            System.out.println("divisible by 3");
+        } else {
+            System.out.println("myNumber  =  " +myNumber );
+        }
     }
 }
