@@ -28,13 +28,13 @@ public class Homework4 {
         double studentScore = 35.55;
         int maxScore = 180;
         char grade;
-        if (studentScore < 0 || studentScore > maxScore)   {
+        if (studentScore < 0 || studentScore > maxScore) {
             System.out.println("Invalid student score entered");
         } else {
             // Calculate the percentage
             double percentage = (studentScore / maxScore) * 100;
             // Determine the grade
-                   if (percentage >= 91) {
+            if (percentage >= 91) {
                 grade = 'A';
             } else if (percentage >= 81) {
                 grade = 'B';
@@ -47,37 +47,37 @@ public class Homework4 {
             } else {
                 grade = 'F';
             }
-            System.out.printf("Student Percentage :  = " +percentage + "  " );
+            System.out.printf("Student Percentage :  = " + percentage + "  ");
             System.out.println("Student Grade: " + grade);
-          }
+        }
 
 
 
-        /**
-         * Question-2:
-         * Create a variable (myNumber) and store any value in it.
-         * if the myNumber is divisible by 5, print "divisible by 5"
-         * if the myNumber is divisible by 3, print "divisible by 3"
-         * if the myNumber is divisible by 5 and by 3, print "divisible by 5 and 3"
-         * if the myNumber is NOT divisible by 5 and by 3, print the value in myNumber
-         *
-         * int myNumber = 15;
-         */
-        int myNumber = 15;
-        //int myNumber = 10;
-        //int myNumber = 12;
-        //int myNumber = 13;
-        if (myNumber % 5 == 0 && myNumber % 3 == 0) {
-            System.out.println("myNumber  =  " +myNumber );
-            System.out.println("divisible by 5 and 3");
-        } else if (myNumber % 5 == 0) {
-            System.out.println("myNumber  =  " +myNumber );
-            System.out.println("divisible by 5");
-        } else if (myNumber % 3 == 0) {
-            System.out.println("myNumber  =  " +myNumber );
-            System.out.println("divisible by 3");
-        } else {
-            System.out.println("myNumber  =  " +myNumber );
+            /**
+             * Question-2:
+             * Create a variable (myNumber) and store any value in it.
+             * if the myNumber is divisible by 5, print "divisible by 5"
+             * if the myNumber is divisible by 3, print "divisible by 3"
+             * if the myNumber is divisible by 5 and by 3, print "divisible by 5 and 3"
+             * if the myNumber is NOT divisible by 5 and by 3, print the value in myNumber
+             *
+             * int myNumber = 15;
+             */
+            int myNumber = 15;
+            //int myNumber = 10;
+            //int myNumber = 12;
+            //int myNumber = 13;
+            if (myNumber % 5 == 0 && myNumber % 3 == 0) {
+                System.out.println("myNumber  =  " + myNumber);
+                System.out.println("divisible by 5 and 3");
+            } else if (myNumber % 5 == 0) {
+                System.out.println("myNumber  =  " + myNumber);
+                System.out.println("divisible by 5");
+            } else if (myNumber % 3 == 0) {
+                System.out.println("myNumber  =  " + myNumber);
+                System.out.println("divisible by 3");
+            } else {
+                System.out.println("myNumber  =  " + myNumber);
+            }
         }
     }
-}
