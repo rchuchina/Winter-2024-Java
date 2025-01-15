@@ -78,12 +78,20 @@ public class Homework5 {
         //int[] numbers = {1, 2, -1, -3};
         // Variable to store the total
         int total = 0;
+
         // Loop to calculate the total
+        //  for (int i = 0; i < numbers.length; i++) {
+        //    int number = numbers[i]; // Accessing the current element
+        // Use 'number' here
+        //  {total += number;} } // Add each number to the total
+
+        // Loop to calculate the total different one
         for (int number : numbers) {
             total += number; // Add each number to the total
         }
-        // Print the result outside the loop
-        System.out.println("Given array -> " + Arrays.toString(numbers));
-        System.out.println("Total -> " + total);
+            // Print the result outside the loop
+            System.out.println("Given array -> " + Arrays.toString(numbers));
+            System.out.println("Total -> " + total);
         }
-}
+    }
+
