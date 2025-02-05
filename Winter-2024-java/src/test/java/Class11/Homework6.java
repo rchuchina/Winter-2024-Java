@@ -46,16 +46,17 @@ public class Homework6 {
     // Q1: Reverse words in a string
     public static String reverseWords(String str) {
         String[] words = str.split(" ");
-        StringBuilder reversed = new StringBuilder();
+        String result = "";
 
         for (int i = words.length - 1; i >= 0; i--) {
-            reversed.append(words[i]);
+            result += words[i];
             if (i != 0) {
-                reversed.append(" ");
+                result += " ";
             }
         }
-        return reversed.toString();
+        return result;
     }
+
 
     // Q2: Find total of an int-array
     public static int getTotal(int[] numbers) {
@@ -69,13 +70,13 @@ public class Homework6 {
     // Q3: Create an abbreviation from a string
     public static String makeAbbreviation(String str) {
         String[] words = str.split(" ");
-        StringBuilder abbreviation = new StringBuilder();
-
+        String result = "";
         for (String word : words) {
             if (!word.isEmpty()) {
-                abbreviation.append(Character.toUpperCase(word.charAt(0)));
+                result += Character.toUpperCase(word.charAt(0));
             }
         }
-        return abbreviation.toString();
+        return result;
     }
 }
+
