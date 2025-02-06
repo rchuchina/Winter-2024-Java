@@ -2,6 +2,8 @@ package Class16.Collections_Pkg_3;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
+
 
 public class Homework8 {
     public static void main(String[] args) {
@@ -39,6 +41,13 @@ public class Homework8 {
         student2027List.add("MichAEl");
 
 
+        Set<String> uniqueNames = new HashSet<>();
+        for (String name : student2027List) {
+            uniqueNames.add(name.toLowerCase());
+        }
+        System.out.println("Unique Names (ignoring case): " + uniqueNames);
+
+
         /**
          * Q2: Find the maximum-value present in the HashSet
          */
@@ -56,6 +65,16 @@ public class Homework8 {
         mortgageRates.add(1.12);
 
 
+        // Initialize maxRate with the first value from the HashSet
+        Double maxRate = null;
+        for (double rate : mortgageRates) {
+            if (maxRate == null || rate > maxRate) {
+                maxRate = rate;
+
+
+            }
+        }
+        System.out.println("Maximum mortgage rate: " + maxRate);
 
 
 
