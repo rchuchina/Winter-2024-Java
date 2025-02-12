@@ -2,7 +2,7 @@ package Class16.Collections_Pkg_3;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
+//import java.util.Set;
 
 
 public class Homework8 {
@@ -40,8 +40,8 @@ public class Homework8 {
         student2027List.add("JIa");
         student2027List.add("MichAEl");
 
-
-        Set<String> uniqueNames = new HashSet<>();
+        HashSet<String> uniqueNames = new HashSet<>();
+        //Set<String> uniqueNames = new HashSet<>();
         for (String name : student2027List) {
             uniqueNames.add(name.toLowerCase());
         }
